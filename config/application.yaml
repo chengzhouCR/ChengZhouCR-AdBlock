@@ -17,27 +17,27 @@ application:
       path: 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt'
       type: easylist
 
-    - name: 'halflife-list'
+    - name: 'halflife'
       path: 'https://cdn.jsdelivr.net/gh/sbwml/halflife-list@master/ad.txt'
       type: easylist
 
-    - name: '不是DD啊'
+    - name: 'DD-AD'
       path: 'https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt'
       type: easylist
 
-    - name: '海哥规则'
+    - name: '海哥拦截规则'
       path: 'https://raw.githubusercontent.com/2771936993/HG/main/hg1.txt'
       type: easylist
 
-    - name: '晴雅广告拦截规则重置版'
-      path: 'https://raw.githubusercontent.com/790953214/qy-Ads-Rule/main/black.txt'
+    - name: '晴雅拦截规则'
+      path: 'http://rssv.cn/adguard/api.php?type=black'
       type: easylist
 
-    - name: '茯苓规则-白名单'
+    - name: '茯苓广告规则-白名单'
       path: 'https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingAllowList.txt'
       type: easylist
 
-    - name: '茯苓规则'
+    - name: '茯苓广告规则'
       path: 'https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt'
       type: easylist  
 
@@ -58,7 +58,7 @@ application:
       Last Modified: ${date}
       Total Size: ${total}
       Homepage: https://github.com/chengzhouCR/AdBlock-Rules
-      Description: 自用的路由器去广告规则，每日自动更新，上游规则：AWAvenue Ads Rule、jiekouAD、halflife规则、不是DD啊、海哥规则、晴雅规则、茯苓规则、217heidai规则精简版、10007_auto。
+      Description: 自用的路由器去广告规则，每日自动更新，上游规则：AWAvenue Ads Rule、jiekouAD、halflife规则、DD-AD规则、海哥拦截规则、晴雅拦截规则、茯苓广告规则、217heidai规则、10007_auto规则。
       
     files:
       - name: smartdns.conf    
