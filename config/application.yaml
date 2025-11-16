@@ -31,6 +31,14 @@ application:
 
     - name: '晴雅广告拦截规则重置版'
       path: 'https://raw.githubusercontent.com/790953214/qy-Ads-Rule/main/black.txt'
+      type: easylist
+
+    - name: 'lingeringsound规则'
+      path: 'https://raw.githubusercontent.com/lingeringsound/adblock_auto/main/base/%E5%85%B6%E4%BB%96.prop'
+      type: easylist
+
+    - name: '茯苓规则'
+      path: 'https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Develop/FuLingRules/FuLingBlockList.txt'
       type: easylist  
       
   # 输出配置
@@ -42,7 +50,7 @@ application:
       Last Modified: ${date}
       Total Size: ${total}
       Homepage: https://github.com/chengzhouCR/AdBlock-Rules
-      Description: 自用的去广告规则，规则较为精简，每日自动更新。上游规则源：AWAvenue Ads Rule、jiekouAD、halflife-list、DD-AD、海哥规则、晴雅规则。
+      Description: 自用的路由器去广告规则，规则较为精简，每日自动更新。上游规则源：AWAvenue Ads Rule、jiekouAD、halflife-list、不是DD啊、海哥规则、晴雅规则、lingeringsound规则、茯苓规则。
       
     files:
       - name: smartdns.conf    
@@ -53,13 +61,6 @@ application:
         filter:
           - basic             
           - wildcard
-
-      - name: easylist.txt
-        type: easylist                 
-        filter:
-          - basic             
-          - wildcard
-          - unknown
       
       - name: dnsmasq.conf
         type: dnsmasq                
