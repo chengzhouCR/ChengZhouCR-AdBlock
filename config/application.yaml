@@ -15,22 +15,38 @@ application:
   # 输入配置
   input:
     - name: 'AWAvenue-Ads-Rules'               
-      path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt' 
-
-    - name: 'jiekouAD'
-      path: 'https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt'
-      type: easylist  
+      path: 'https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt'   
 
     - name: 'adblockfilters'
       path: 'https://raw.githubusercontent.com/217heidai/adblockfilters/main/rules/adblockdnslite.txt'
-      type: easylist
+      type: easylist  
 
     - name: 'DD-AD规则'
       path: 'https://raw.githubusercontent.com/afwfv/DD-AD/refs/heads/release/DD-AD.txt'
       type: easylist
 
-    - name: '海哥规则'
+    - name: '海哥拦截规则'
       path: 'https://raw.githubusercontent.com/2771936993/HG/main/hg1.txt'
+      type: easylist  
+
+    - name: '晴雅拦截规则'
+      path: 'http://rssv.cn/adguard/api.php?type=black'
+      type: easylist
+
+    - name: '茯苓拦截列表'
+      path: 'https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt'
+      type: easylist 
+
+    - name: '茯苓允许列表'
+      path: 'https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingAllowList.txt'
+      type: easylist
+
+    - name: 'who520-黑名单'
+      path: 'https://raw.githubusercontent.com/qq5460168/dangchu/main/black.txt'
+      type: easylist
+
+    - name: 'who520-白名单'
+      path: 'https://raw.githubusercontent.com/qq5460168/dangchu/main/white.txt'
       type: easylist  
       
   # 输出配置
@@ -42,7 +58,7 @@ application:
       Last Modified: ${date}
       Total Size: ${total}
       Homepage: https://github.com/chengzhouCR/AdBlock-Rules
-      Description: 自用的路由器去广告规则，每日自动更新，上游规则：AWAvenue Ads Rule、jiekouAD、adblockfilters、DD-AD规则、海哥规则。
+      Description: 自用的路由器去广告规则，每日自动更新，上游规则：AWAvenue Ads Rule、adblockfilters、DD-AD规则、海哥拦截规则、晴雅拦截规则、茯苓广告规则、who520规则。
       
     files:
       - name: smartdns.conf    
